@@ -60,7 +60,7 @@
 ```text
 Frontend & UI
 ├─ 인터랙티브 웹사이트
-├─ 눈이 심심하지 않아하는 디자인
+├─ 눈이 즐거운 디자인
 └─ UI/UX 실험
 
 Side Projects
