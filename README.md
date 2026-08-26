@@ -31,14 +31,6 @@
 단순히 화면 위를 움직이는 스프라이트가 아니라,  
 걷고, 점프하고, 창을 타고 넘나들며 작은 생물처럼 느껴지는 데스크톱 펫을 목표로 만들고 있습니다.
 
-<div align="center">
-
-<a href="https://github.com/joohyunjin09/Slugcat-In-My-Monitor">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=joohyunjin09&repo=Slugcat-In-My-Monitor&theme=transparent&hide_border=true" alt="Slugcat In My Monitor 저장소 카드">
-</a>
-
-</div>
-
 ---
 
 ## 기술 스택
@@ -76,18 +68,6 @@ Side Projects
 ├─ 간편한 웹 페이지 생성 웹
 └─ 갑자기 생각나서 마음대로 만드는 것들...
 ```
-
----
-
-## 📊 GitHub
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=joohyunjin09&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" alt="Ju의 GitHub 통계">
-
-~~조금 허전하네요...~~
-
-</div>
 
 ---
 
