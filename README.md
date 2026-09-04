@@ -6,7 +6,7 @@
 
 <br>
 
-<img src="./assets/slugcat-desktop.png" alt="코딩 도우미들" width="100%">
+<img src="./assets/slugcat-desktop.gif" alt="코딩 도우미들" width="100%">
 
 </div>
 
