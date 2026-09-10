@@ -32,6 +32,8 @@
 광고를 통한 수익화를 노리고 있으며 실제 배포까지 마친 개인 프로젝트입니다.
 3D, 셰이더, 외부 오픈 API, 에셋, 카메라 등등 처음으로 다양한 기술들을 종합해서 만들었습니다.
 
+<img src="./assets/AirplaneMainpage.png" width="100%">
+
 ## [AirplaneInWeb 사이트 방문하기](https://airplaneinweb.com)
 
 
