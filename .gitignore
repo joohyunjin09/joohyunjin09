@@ -1,0 +1,4 @@
+# Offline profile animation tooling
+__pycache__/
+*.py[cod]
+assets/slugcat/*.tmp

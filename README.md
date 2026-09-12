@@ -93,4 +93,13 @@ Side Projects
 
 ### 들러주셔서 감사합니다!
 
+<!-- SLUGCAT-PROFILE:START -->
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/slugcat/slugcat-dark-static.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/slugcat/slugcat-light-static.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/slugcat/slugcat-dark.svg">
+  <img src="./assets/slugcat/slugcat-light.svg" alt="커밋 사이를 산책하는 흰색 슬러그캣 한 마리. 호흡하고, 눈을 깜빡이고, 걷고, 작은 점프를 합니다." width="100%">
+</picture>
+<!-- SLUGCAT-PROFILE:END -->
+
 </div>

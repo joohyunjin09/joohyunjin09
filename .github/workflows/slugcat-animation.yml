@@ -1,0 +1,91 @@
+name: White slugcat profile animation
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 07:23 KST. GitHub schedules are best-effort, not exact timers.
+    - cron: '23 22 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'tools/slugcat/**'
+      - 'tests/test_slugcat.py'
+      - '.github/workflows/slugcat-animation.yml'
+  pull_request:
+    paths:
+      - 'tools/slugcat/**'
+      - 'tests/test_slugcat.py'
+      - '.github/workflows/slugcat-animation.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: slugcat-animation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.13'
+      - name: Compile and run offline regression tests
+        run: |
+          python -m compileall -q tools/slugcat tests/test_slugcat.py
+          python -m unittest discover -s tests -v
+
+  publish:
+    needs: test
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && github.repository == 'joohyunjin09/joohyunjin09'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.13'
+      - name: Fetch contribution snapshot and bake all four SVGs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -m tools.slugcat.generate --user joohyunjin09 --fetch
+      - name: Save build artifacts
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: white-slugcat-profile
+          path: assets/slugcat/
+          retention-days: 7
+          if-no-files-found: error
+      - name: Publish only generated assets without overwriting concurrent changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- assets/slugcat/slugcat-*.svg assets/slugcat/manifest.json
+          if test -f assets/slugcat/contributions.json; then
+            git add -- assets/slugcat/contributions.json
+          fi
+          if git diff --cached --quiet; then
+            echo 'No generated changes.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git commit -m 'chore(profile): refresh white slugcat animation [skip ci]'
+          # A non-fast-forward push fails instead of force-pushing/rebasing stale assets.
+          git push origin HEAD:main
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          m = json.loads(Path('assets/slugcat/manifest.json').read_text())
+          print(f"White slugcat: {m['duration_seconds']:.1f}s, {m['sample_fps']} fps samples.")
+          print(f"Calendar source: **{m['source']}**, snapshot: **{m['as_of']}**.")
+          if m['source'] != 'github':
+              print('Calendar was not refreshed: a labelled cache/layout fallback was published.')
+          PY
