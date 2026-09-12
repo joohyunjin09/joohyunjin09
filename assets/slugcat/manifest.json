@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "user": "joohyunjin09",
+  "character": "white",
+  "character_count": 1,
+  "source": "github",
+  "as_of": "2026-09-12",
+  "total_contributions": 719,
+  "seed": 12176636230723886588,
+  "duration_seconds": 36.0,
+  "physics_hz": 120,
+  "sample_fps": 24,
+  "samples": 865,
+  "tail_segments": 7,
+  "loop_error_before_endpoint_snap_px": 0.0,
+  "warmup_cycles": 2,
+  "interest_date": "2026-04-09",
+  "states": [
+    {
+      "state": "Idle",
+      "start_seconds": 0.0,
+      "duration_seconds": 2.3
+    },
+    {
+      "state": "Walk",
+      "start_seconds": 2.3,
+      "duration_seconds": 4.4
+    },
+    {
+      "state": "Idle",
+      "start_seconds": 6.7,
+      "duration_seconds": 0.9
+    },
+    {
+      "state": "Walk",
+      "start_seconds": 7.6,
+      "duration_seconds": 3.457
+    },
+    {
+      "state": "Inspect",
+      "start_seconds": 11.057,
+      "duration_seconds": 2.3
+    },
+    {
+      "state": "Crouch",
+      "start_seconds": 13.357,
+      "duration_seconds": 0.28
+    },
+    {
+      "state": "Hop",
+      "start_seconds": 13.637,
+      "duration_seconds": 0.72
+    },
+    {
+      "state": "Land",
+      "start_seconds": 14.357,
+      "duration_seconds": 0.5
+    },
+    {
+      "state": "Idle",
+      "start_seconds": 14.857,
+      "duration_seconds": 0.7
+    },
+    {
+      "state": "Turn",
+      "start_seconds": 15.557,
+      "duration_seconds": 0.85
+    },
+    {
+      "state": "Walk",
+      "start_seconds": 16.407,
+      "duration_seconds": 8.465
+    },
+    {
+      "state": "Inspect",
+      "start_seconds": 24.872,
+      "duration_seconds": 1.5
+    },
+    {
+      "state": "Turn",
+      "start_seconds": 26.372,
+      "duration_seconds": 0.85
+    },
+    {
+      "state": "Idle",
+      "start_seconds": 27.222,
+      "duration_seconds": 8.778
+    }
+  ],
+  "files": {
+    "slugcat-light.svg": {
+      "bytes": 358518,
+      "sha256": "46870b520e8fbd26ddcaaaa3cc6f2bcacf96eb32f28bc8d091f9abba6762df74"
+    },
+    "slugcat-light-static.svg": {
+      "bytes": 46160,
+      "sha256": "327ce5714ef25c59417f8e0c2b91b0e7dd653dd0dd083eb914429dcdd06a0557"
+    },
+    "slugcat-dark.svg": {
+      "bytes": 358518,
+      "sha256": "d59da798755456b2b2703b268bfdb160b6babae4317dd5ea228dc3132fac381b"
+    },
+    "slugcat-dark-static.svg": {
+      "bytes": 46160,
+      "sha256": "5a3df1c8a5d6dd4eda5928b526a9fa6d09447da5ddb7e235ff333598f2625576"
+    }
+  }
+}
