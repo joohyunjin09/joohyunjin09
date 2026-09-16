@@ -4,9 +4,9 @@
   "character": "white",
   "character_count": 1,
   "source": "github",
-  "as_of": "2026-09-15",
+  "as_of": "2026-09-16",
   "total_contributions": 721,
-  "seed": 545148764538334757,
+  "seed": 15693268496547088212,
   "duration_seconds": 36.0,
   "physics_hz": 120,
   "sample_fps": 24,
@@ -14,7 +14,7 @@
   "tail_segments": 7,
   "loop_error_before_endpoint_snap_px": 0.0,
   "warmup_cycles": 2,
-  "interest_date": "2026-04-15",
+  "interest_date": "2026-04-08",
   "states": [
     {
       "state": "Idle",
@@ -24,85 +24,85 @@
     {
       "state": "Walk",
       "start_seconds": 2.3,
-      "duration_seconds": 4.4
+      "duration_seconds": 4.2
     },
     {
       "state": "Idle",
-      "start_seconds": 6.7,
+      "start_seconds": 6.5,
       "duration_seconds": 0.9
     },
     {
       "state": "Walk",
-      "start_seconds": 7.6,
-      "duration_seconds": 3.457
+      "start_seconds": 7.4,
+      "duration_seconds": 3.3
     },
     {
       "state": "Inspect",
-      "start_seconds": 11.057,
+      "start_seconds": 10.7,
       "duration_seconds": 2.3
     },
     {
       "state": "Crouch",
-      "start_seconds": 13.357,
+      "start_seconds": 13.0,
       "duration_seconds": 0.28
     },
     {
       "state": "Hop",
-      "start_seconds": 13.637,
+      "start_seconds": 13.28,
       "duration_seconds": 0.72
     },
     {
       "state": "Land",
-      "start_seconds": 14.357,
+      "start_seconds": 14.0,
       "duration_seconds": 0.5
     },
     {
       "state": "Idle",
-      "start_seconds": 14.857,
+      "start_seconds": 14.5,
       "duration_seconds": 0.7
     },
     {
       "state": "Turn",
-      "start_seconds": 15.557,
+      "start_seconds": 15.2,
       "duration_seconds": 0.85
     },
     {
       "state": "Walk",
-      "start_seconds": 16.407,
-      "duration_seconds": 8.465
+      "start_seconds": 16.05,
+      "duration_seconds": 8.116
     },
     {
       "state": "Inspect",
-      "start_seconds": 24.872,
+      "start_seconds": 24.166,
       "duration_seconds": 1.5
     },
     {
       "state": "Turn",
-      "start_seconds": 26.372,
+      "start_seconds": 25.666,
       "duration_seconds": 0.85
     },
     {
       "state": "Idle",
-      "start_seconds": 27.222,
-      "duration_seconds": 8.778
+      "start_seconds": 26.516,
+      "duration_seconds": 9.484
     }
   ],
   "files": {
     "slugcat-light.svg": {
-      "bytes": 357844,
-      "sha256": "b9fb3e4578f38e45ba69aa07d9003cd260cbd217f5f80c5b5331448c7e2d1a0b"
+      "bytes": 354306,
+      "sha256": "ecf15c5cc5959880c12a78d1e16f3d3e8ee659301cb3c90abe6b8ff99359de89"
     },
     "slugcat-light-static.svg": {
-      "bytes": 46155,
-      "sha256": "e1028fee8c9e9d36c3c92a3b983f7c1054c6228b11a0b0d13556b3a77841abbc"
+      "bytes": 46157,
+      "sha256": "8258bd699d374e357c1642d40378b7a35ef47678cea08a7308830bfb5daa15e9"
     },
     "slugcat-dark.svg": {
-      "bytes": 357844,
-      "sha256": "8598d0c95d2d4ab109bba91684480f8604272e0a7b231341dc666528b57efc72"
+      "bytes": 354306,
+      "sha256": "4cbb1381342e1a53bb4c0520f1d93e7ec4175447fa3c2803be9fd4e1f1d02f36"
     },
     "slugcat-dark-static.svg": {
-      "bytes": 46155,
-      "sha256": "01284edcd284a9b36a627734971ff6f23903c4191a311c08abaebe8f04b69d18"
+      "bytes": 46157,
+      "sha256": "1a18097f201eadfe445575791c0b1b75161e897837ada87a902bba32dbba492a"
     }
   }
 }
