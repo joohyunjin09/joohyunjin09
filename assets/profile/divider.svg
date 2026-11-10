@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="896" height="28" viewBox="0 0 896 28" role="img" aria-label="구분선">
+<defs>
+<linearGradient id="l" gradientUnits="userSpaceOnUse" x1="120" x2="424"><stop offset="0" stop-color="#8b949e" stop-opacity="0"/><stop offset="1" stop-color="#8b949e" stop-opacity=".9"/></linearGradient>
+<linearGradient id="r" gradientUnits="userSpaceOnUse" x1="472" x2="776"><stop offset="0" stop-color="#8b949e" stop-opacity=".9"/><stop offset="1" stop-color="#8b949e" stop-opacity="0"/></linearGradient>
+</defs>
+<g fill="none" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="1 7">
+<path d="M120 14H424" stroke="url(#l)"/>
+<path d="M472 14H776" stroke="url(#r)"/>
+</g>
+<path transform="translate(448 14)" fill="#8b949e" d="M-13 0C-13-1.9-7-2.4 7-2.4 11.5-2.4 14.5-1 14.5 0 14.5 1 11.5 2.4 7 2.4-7 2.4-13 1.9-13 0ZM9-2-2.5-13.5H-5.5L2-2ZM9 2-2.5 13.5H-5.5L2 2ZM-7-1.8-11.5-6.5H-13.5L-11-1.8ZM-7 1.8-11.5 6.5H-13.5L-11 1.8Z"/>
+</svg>
