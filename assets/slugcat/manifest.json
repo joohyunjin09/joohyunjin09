@@ -4,9 +4,9 @@
   "character": "white",
   "character_count": 1,
   "source": "github",
-  "as_of": "2026-11-27",
+  "as_of": "2026-11-28",
   "total_contributions": 1029,
-  "seed": 10920895620170463462,
+  "seed": 3342607876725801236,
   "duration_seconds": 36.0,
   "physics_hz": 120,
   "sample_fps": 24,
@@ -14,7 +14,7 @@
   "tail_segments": 7,
   "loop_error_before_endpoint_snap_px": 0.0,
   "warmup_cycles": 2,
-  "interest_date": "2026-07-06",
+  "interest_date": "2026-07-08",
   "states": [
     {
       "state": "Idle",
@@ -89,20 +89,20 @@
   ],
   "files": {
     "slugcat-light.svg": {
-      "bytes": 369193,
-      "sha256": "9e8850cc9ebe447cda53095ead77c0a463d328785a4745a4a973f77cba21f2f1"
+      "bytes": 369191,
+      "sha256": "5571881b79ec22bdc9017321ab06045da1b974e82dd47a8e7c20ed772ba08d7b"
     },
     "slugcat-light-static.svg": {
-      "bytes": 46169,
-      "sha256": "89056d47ab5318fe8b3692b7f01783a0d0a77cfd462d3eb279ba2646de75a328"
+      "bytes": 46170,
+      "sha256": "aaad767fd906336ef4b2fafb958e99773c10533ddedc952c502229a4b37b593b"
     },
     "slugcat-dark.svg": {
-      "bytes": 369193,
-      "sha256": "ca8a554ff9c0092ff8dd58aea008fb5ac796f07911d1ded815d99b5f448c2ce1"
+      "bytes": 369191,
+      "sha256": "a89dba69fe491bb2eacb25c1968f4cb352dc032639319f5cd1a2162c7959c530"
     },
     "slugcat-dark-static.svg": {
-      "bytes": 46169,
-      "sha256": "059966aec165f0f57bdc8eab40fb25999bd6614c33deca6499020214b9e64237"
+      "bytes": 46170,
+      "sha256": "f063b24ad7fc99fb247e308c1325f9b5ea53e8f800d5a63e4c06b15afdad9d0b"
     }
   }
 }
